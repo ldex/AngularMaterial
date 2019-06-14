@@ -1,0 +1,24 @@
+main {
+  height: 100% !important;
+}
+
+.mat-sidenav-container {
+  height: 85%;
+}
+
+.mat-sidenav-content {
+  display: block !important;
+}
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+footer {
+  font-size: 12pt;
+  text-align: right;
+  background: #CCC;
+  padding: 6px;
+}

@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.right {
+  float: right;
+}
+
+.mat-nav-list a.active, 
+.mat-nav-list a:focus.active {
+  background-color: yellow;
+}
+
+.dark-theme .mat-nav-list a.active, 
+.dark-theme .mat-nav-list a:focus.active {
+  background-color: #03a9f4;
+}
+
+.dark-theme a {
+  color: white;
+}
+
+*[disabled] {
+    cursor: not-allowed;
+}
+
+/* loading spinner */
+.loading {
+    display: inline-block;
+    overflow: hidden;
+    height: 1.3em;
+    margin-top: -0.3em;
+    line-height: 1.5em;
+    vertical-align: text-bottom;
+  }
+  
+  .loading::after {
+    display: inline-table;
+    white-space: pre;
+    text-align: left;
+    content: "◎◎◎\A◉◎◎\A◎◉◎\A◎◎◉";
+    animation: spin 1s steps(4) infinite;
+  }
+
+  @keyframes spin  { to { transform: translateY( -6.0em); } }
+
+.mat-card {
+  margin: 20px;
+  padding: 0;
+}
+
+.mat-card h2 {
+  margin-top: 0;
+}
